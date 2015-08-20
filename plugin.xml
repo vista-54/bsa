@@ -29,7 +29,7 @@
             </feature>
         </config-file>  
         <source-file src="src/Android/bsa.java" target-dir="src/com/vista/bsa" />
-			<source-file src="src/Android/libs/android-support-v4.jar" target-dir="libs" framework="true" />
+			<source-file src="src/libs/android-support-v4.jar" target-dir="libs" framework="true" />
      
 
     </platform>
