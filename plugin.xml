@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+	id="com.vista.bsa"
+	version="0.1.0">
+  <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+
+
+	<name>PushServicePlugin</name>
+	<description></description>
+	<author>Vista</author>
+	<keywords></keywords>
+	<license>Apache 2.0</license>
+
+	<js-module src="www/bsa.js" name="bsa">
+		<clobbers target="window.Bsa" />
+	</js-module>
+	
+
+	
+	
+
+
+	<platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="bsa">
+                <param name="android-package" value="com.vista.bsa" />
+            </feature>
+        </config-file>  
+        <source-file src="src/Android/bsa.java" target-dir="src/com/vista/bsa" />
+     
+
+    </platform>
+</plugin>
+
+	
